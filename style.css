@@ -184,7 +184,7 @@ body{
 /* Responsive Section */
 /* Mobile Device Starts */
 @media only screen and (max-width: 576px){
-    .nav .logo, .btn img{
+    .nav .logo{
         display: none;
     }
     .btn{
@@ -211,5 +211,19 @@ body{
     .div-title{
         text-align: center;
     }
+    .course-section-title, .top-player-title{
+        margin-left: -10px;
+    }
     
 }
+/* Mobile Responsive Ends */
+/* Tablet Responsive Starts*/
+@media only screen and (min-width: 577px) and (max-width: 922px){
+       .top-player-blog{
+        width: 100%;
+       }
+       .player, .blog{
+        flex-direction: column;
+       }
+}
+/* Tablet Responsive Ends */
