@@ -176,3 +176,30 @@ body{
     padding: 6px 10px;
     border-radius: 15px;
 }
+/* Course Section Ends */
+
+/* Responsive Section */
+@media only screen and (max-width: 576px){
+    .nav, .course-container{
+        display: none;
+    }
+    .top-player-blog{
+        width: 100%;
+    }
+    .player{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog{
+        flex-direction: column;
+        
+    }
+    
+}
