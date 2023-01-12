@@ -47,7 +47,10 @@ body{
 }
 .btn ul li{
     color: #ffffff;
-    padding-right: 36px;
+    margin-right: 36px;
+}
+.btn ul li:hover{
+    background-color: #ED6B4F;
 }
 /* Top Players And Blog Styles */
 /* Main section */
@@ -179,27 +182,34 @@ body{
 /* Course Section Ends */
 
 /* Responsive Section */
+/* Mobile Device Starts */
 @media only screen and (max-width: 576px){
-    .nav, .course-container{
+    .nav .logo, .btn img{
         display: none;
     }
-    .top-player-blog{
+    .btn{
+        margin-left: 25px;   
+    }
+    .top-player-blog, .course-container{
         width: 100%;
     }
     .player{
         flex-direction: column;
         justify-content: center;
     }
-    .players{
+    .players, .courses, .blogs{
         grid-template-columns: repeat(1, 1fr);
 
-    }
-    .blogs{
-        grid-template-columns: repeat(1, 1fr);
     }
     .blog{
         flex-direction: column;
         
+    }
+    .courses{
+        margin-left: 60px;
+    }
+    .div-title{
+        text-align: center;
     }
     
 }
